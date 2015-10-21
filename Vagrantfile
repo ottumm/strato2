@@ -39,6 +39,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   chef.json = { :mysql_password => "foo" }
   # end
 
-  config.vm.provision "shell", path: "scripts/provision.sh"
+  config.vm.provision "shell", path: "provision/provision.sh"
+  config.vm.provision "shell", path: "provision/vagrant.sh"
 
 end
