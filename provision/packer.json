@@ -1,0 +1,11 @@
+{
+	"builders": [{
+		"type": "docker",
+		"image": "ubuntu:12.04",
+		"commit": true
+	}],
+	"provisioners": [{
+		"type": "shell",
+		"script": "provision.sh"
+	}]
+}
