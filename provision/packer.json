@@ -2,11 +2,7 @@
 	"builders": [{
 		"type": "docker",
 		"image": "ubuntu:12.04",
-		"export_path": "strato.tar",
-		"run_command": [
-			"{{.Image}}",
-			"/bin/sh -c 'cd /opt/strato && npm start'"
-		]
+		"export_path": "strato.tar"
 	}],
 	"provisioners": [
 	{
