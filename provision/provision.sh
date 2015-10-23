@@ -2,7 +2,7 @@ set -e
 set -x
 
 apt-get -qq update
-apt-get -qq install -y apt-utils python-software-properties python g++ make curl git
+apt-get -qq install -y apt-utils python-software-properties python build-essential curl git
 
 curl -sL https://deb.nodesource.com/setup_0.12 | bash -
 
