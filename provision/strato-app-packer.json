@@ -2,7 +2,7 @@
 	"builders": [
 		{
 			"type": "docker",
-			"image": "welldone/strato-base",
+			"image": "strato/strato-base",
 			"export_path": "strato-app.image.tar",
 			"pull": false
 		}
