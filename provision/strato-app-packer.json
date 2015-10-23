@@ -2,7 +2,7 @@
 	"builders": [
 		{
 			"type": "docker",
-			"image": "strato/strato-base",
+			"image": "strato/base",
 			"export_path": "strato-app.image.tar",
 			"pull": false
 		}
@@ -25,7 +25,7 @@
 	"post-processors": [
 		{
 			"type": "docker-import",
-			"repository": "welldone/strato-app",
+			"repository": "strato/app",
 			"tag": "latest"
 		}
 	]

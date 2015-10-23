@@ -15,7 +15,7 @@
 	"post-processors": [
 		{
 			"type": "docker-import",
-			"repository": "strato/strato-base",
+			"repository": "strato/base",
 			"tag": "latest"
 		}
 	]
