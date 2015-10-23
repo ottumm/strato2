@@ -1,0 +1,32 @@
+{
+	"builders": [
+		{
+			"type": "docker",
+			"image": "welldone/strato-base",
+			"export_path": "strato-app.image.tar",
+			"pull": false
+		}
+	],
+	"provisioners": [
+		{
+			"type": "shell",
+			"inline": ["mkdir /opt/strato"]
+		},
+		{
+			"type": "file",
+			"source": "../",
+			"destination": "/opt/strato"
+		},
+		{
+			"type": "shell",
+			"script": "install.sh"
+		}
+	],
+	"post-processors": [
+		{
+			"type": "docker-import",
+			"repository": "welldone/strato-app",
+			"tag": "latest"
+		}
+	]
+}
