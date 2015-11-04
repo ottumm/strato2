@@ -16,7 +16,8 @@
 		{
 			"type": "docker-import",
 			"repository": "strato/base",
-			"tag": "latest"
+			"tag": "latest",
+			"only": ["docker"]
 		}
 	]
 }
