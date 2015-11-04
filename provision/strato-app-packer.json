@@ -3,8 +3,7 @@
 		{
 			"type": "docker",
 			"image": "strato/base",
-			"export_path": "strato-app.image.tar",
-			"pull": false
+			"export_path": "strato-app.image.tar"
 		}
 	],
 	"provisioners": [
